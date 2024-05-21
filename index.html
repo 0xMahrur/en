@@ -11,12 +11,34 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+  .container{
+  display: inline-block;
+  font-family: "arial";
+  font-size: 24px;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 1.5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+  
 </style>
 </head>
 <body style="background-color:black;align-items:center;">
-
-<center><h1 style="color:#00ff15;margin-top:50vh;">Hello, World</h1></center>
-
+<div class="container">
+<center><h1 class="typed" style="color:#00ff15;margin-top:50vh;">Hello, World</h1></center>
+</div>
 
 </body>
 </html>
